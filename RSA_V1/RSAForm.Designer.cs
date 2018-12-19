@@ -165,6 +165,7 @@
             this.btn_Encrypt.TabIndex = 2;
             this.btn_Encrypt.Text = "RAS加密";
             this.btn_Encrypt.UseVisualStyleBackColor = true;
+            this.btn_Encrypt.Click += new System.EventHandler(this.btn_Encrypt_Click);
             // 
             // btn_Decrypt
             // 
@@ -174,8 +175,9 @@
             this.btn_Decrypt.TabIndex = 2;
             this.btn_Decrypt.Text = "RAS解密";
             this.btn_Decrypt.UseVisualStyleBackColor = true;
+            this.btn_Decrypt.Click += new System.EventHandler(this.btn_Decrypt_Click);
             // 
-            // RasFrom
+            // RSAFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,8 +197,9 @@
             this.Controls.Add(this.lb_RASStr);
             this.Controls.Add(this.txt_D);
             this.Controls.Add(this.lb_OldStr);
-            this.Name = "RasFrom";
+            this.Name = "RSAFrom";
             this.Text = "RAS加密和解密";
+            this.Load += new System.EventHandler(this.RSAFrom_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
