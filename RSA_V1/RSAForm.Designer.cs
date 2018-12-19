@@ -43,6 +43,7 @@
             this.btn_CreateKey = new System.Windows.Forms.Button();
             this.btn_Encrypt = new System.Windows.Forms.Button();
             this.btn_Decrypt = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_OldStr
@@ -149,7 +150,7 @@
             // 
             // btn_CreateKey
             // 
-            this.btn_CreateKey.Location = new System.Drawing.Point(147, 494);
+            this.btn_CreateKey.Location = new System.Drawing.Point(116, 494);
             this.btn_CreateKey.Name = "btn_CreateKey";
             this.btn_CreateKey.Size = new System.Drawing.Size(138, 23);
             this.btn_CreateKey.TabIndex = 2;
@@ -159,7 +160,7 @@
             // 
             // btn_Encrypt
             // 
-            this.btn_Encrypt.Location = new System.Drawing.Point(314, 494);
+            this.btn_Encrypt.Location = new System.Drawing.Point(273, 494);
             this.btn_Encrypt.Name = "btn_Encrypt";
             this.btn_Encrypt.Size = new System.Drawing.Size(138, 23);
             this.btn_Encrypt.TabIndex = 2;
@@ -169,7 +170,7 @@
             // 
             // btn_Decrypt
             // 
-            this.btn_Decrypt.Location = new System.Drawing.Point(479, 494);
+            this.btn_Decrypt.Location = new System.Drawing.Point(432, 494);
             this.btn_Decrypt.Name = "btn_Decrypt";
             this.btn_Decrypt.Size = new System.Drawing.Size(138, 23);
             this.btn_Decrypt.TabIndex = 2;
@@ -177,11 +178,22 @@
             this.btn_Decrypt.UseVisualStyleBackColor = true;
             this.btn_Decrypt.Click += new System.EventHandler(this.btn_Decrypt_Click);
             // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.Location = new System.Drawing.Point(591, 494);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(138, 23);
+            this.btn_Refresh.TabIndex = 2;
+            this.btn_Refresh.Text = "刷新秘钥";
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // RSAFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 529);
+            this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Decrypt);
             this.Controls.Add(this.btn_Encrypt);
             this.Controls.Add(this.btn_CreateKey);
@@ -222,6 +234,7 @@
         private System.Windows.Forms.Button btn_CreateKey;
         private System.Windows.Forms.Button btn_Encrypt;
         private System.Windows.Forms.Button btn_Decrypt;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }
 

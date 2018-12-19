@@ -93,5 +93,14 @@ namespace RSA_V1
             }
 
         }
+        /// <summary>
+        /// 刷新秘钥
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            New_Key();
+        }
     }
 }
